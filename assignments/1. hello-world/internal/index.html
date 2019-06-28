@@ -6,5 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Internal</title>
   </head>
-  <body></body>
+  <body>
+    <p id="message"></p>
+    <button onclick="display()">PROMPT</button>
+    <script>
+      function display() {
+        var name = prompt("Enter your Name");
+        if (name != null) {
+          document.getElementById("message").innerHTML = "Good Morning " + name;
+        }
+      }
+    </script>
+  </body>
 </html>
